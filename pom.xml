@@ -9,8 +9,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>11</maven.compiler.source>
 		<maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
-	  <sonar.projectKey>skatlamenace_TD2</sonar.projectKey>
-	  <sonar.organization>skatlamenace</sonar.organization>
+	  <sonar.projectKey>M1_TestsUnitaires_TD2</sonar.projectKey>
+	  <sonar.organization>mrysson</sonar.organization>
 	  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
 
