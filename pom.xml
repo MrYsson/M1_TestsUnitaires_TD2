@@ -1,17 +1,19 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-https://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>TD_2</groupId>
-	<artifactId>calculator</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<!-- Indiquer l'encodage et le projet en Java 11 -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>TD_2</groupId>
+  <artifactId>calculator</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+<!-- Indiquer l'encodage et le projet en Java 11 -->
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>11</maven.compiler.source>
 		<maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
+	  <sonar.projectKey>skatlamenace_TD2</sonar.projectKey>
+	  <sonar.organization>skatlamenace</sonar.organization>
+	  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
+
 	<!-- Déclaration de la dépendance vers JUnit -->
 	<dependencies>
 		<dependency>
@@ -26,7 +28,13 @@ https://maven.apache.org/xsd/maven-4.0.0.xsd">
 			<version>3.13.2</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.12.1</version>
+		</dependency>
 	</dependencies>
+	
 	<!-- Pour être compatible avec JUnit 5 -->
 	<build>
 		<plugins>
@@ -56,3 +64,4 @@ https://maven.apache.org/xsd/maven-4.0.0.xsd">
 		</plugins>
 	</build>
 </project>
+
